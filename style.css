@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for player settings */
+.player-settings {
+  margin: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+/* Player settings input */
+.player-settings div {
+  display: flex;
+  align-items: center;
+}
+
+.player-settings label {
+  margin-right: 10px;
+}
+
+.player-settings input[type="text"],
+.player-settings input[type="color"] {
+  padding: 5px;
+  font-size: 16px;
+}
+
+/* Game board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+  gap: 1px;
+  margin: 20px auto;
+  max-width: 420px;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* Turn indicator */
+.turn-indicator {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.turn-indicator div {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+/* Message display */
+.message {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px;
+}
